@@ -24,12 +24,11 @@ function changeFunction3(){
     total();
 }
 function buyFunction(){
-
-   var r =  confirm("Xác nhận mua hàng ?")
-   if (r==true)
-   {
-       alert ("Cảm ơn bạn đã đặt hàng!");
-   }
+    document.getElementById('modalbox').style.display='block';
+}
+function confirm(){
+    document.getElementById('modalbox2').style.display='block';
+    document.getElementById('modalbox').style.display='none';
 }
 function rmFunction(){
     $('#row1').remove();

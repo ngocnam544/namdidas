@@ -116,7 +116,34 @@
         </div>
     </div>
 
-
+<!-- ----modal=== -->
+<div id="modalbox" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content">
+      <div class="container-mdb">
+        <h1>Xác nhận đặt hàng</h1>
+        <p>Bạn xác nhận mua hàng?</p>
+      
+        <div class="clearfix">
+          <div class="button" onclick="document.getElementById('modalbox').style.display='none'" class="cancelbtn">Hủy</div>
+          <div class="button yes" onclick="confirm()" class="deletebtn">Tiếp tục</div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="modalbox2" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content">
+      <div class="container-mdb">
+        <h1>Cám ơn bạn đã đặt hàng</h1>
+        <p>Chúc bạn mua sắm vui vẻ</p>
+      
+        <div class="clearfix">
+          <div class="button" onclick="document.getElementById('modalbox2').style.display='none'" class="cancelbtn">Đóng</div>
+        </div>
+      </div>
+    </form>
+  </div>
     <!---------footer----------->
 
     <div class="footer">
@@ -158,19 +185,7 @@
             <p class="copyright">Copyright 2020</p>
         </div>
     </div>
-    <!----------js for toggle menu-------------------->
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-        MenuItems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px";
-            } else {
-                MenuItems.style.maxHeight = "0px"
-            }
-        }
-    </script>
+<script src="index.js"></script>
 </body>
 
 </html>

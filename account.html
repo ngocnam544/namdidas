@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
 
 <body>
@@ -69,8 +70,8 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and IOS mobile phone</p>
+                    <h3>Tải ứng dụng của chúng tôi</h3>
+                    <p>Tải ứng dụng cho thiết bị di động Android và IOS</p>
                     <div class="app-logo">
                         <img src="images/play-store.png">
                         <img src="images/app-store.png">
@@ -78,19 +79,20 @@
                 </div>
                 <div class="footer-col-2">
                     <img src="images/logo.png">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many</p>
+                    <p>Mục đính của chúng tôi là muốn mọi người có thể tiếp cận tới niềm vui và lợi ích của việc tập
+                        luyện thể thao</p>
                 </div>
                 <div class="footer-col-3">
-                    <h3>Useful Links</h3>
+                    <h3>Đường dẫn hữu ích</h3>
                     <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
+                        <li>Giảm giá</li>
+                        <li>Blog</li>
+                        <li>Chính sách đổi trả</li>
+                        <li>Diễn đàn</li>
                     </ul>
                 </div>
                 <div class="footer-col-4">
-                    <h3>Follow us</h3>
+                    <h3>Theo dõi chúng tôi</h3>
                     <ul>
                         <li>Facebook</li>
                         <li>Twitter</li>
@@ -100,41 +102,11 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2020</p>
+            <p class="copyright">NoCopyright 2020</p>
         </div>
     </div>
-    <!----------js for toggle menu-------------------->
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-        MenuItems.style.maxHeight = "0px";
-
-        function menutoggle() {
-            if (MenuItems.style.maxHeight == "0px") {
-                MenuItems.style.maxHeight = "200px";
-            } else {
-                MenuItems.style.maxHeight = "0px"
-            }
-        }
-    </script>
-    <!----------js for toggle form-------------------->
-<script>
-    var LoginForm = document.getElementById("LoginForm");
-    var RegForm = document.getElementById("RegForm");
-    var Indicator = document.getElementById("Indicator");
-
-    function register(){
-        RegForm.style.transform = "translateX(0px)";
-        LoginForm.style.transform = "translateX(0px)";
-        Indicator.style.transform = "translateX(100px)";
-    }
-    function login(){
-        RegForm.style.transform = "translateX(300px)";
-        LoginForm.style.transform = "translateX(300px)";
-        Indicator.style.transform = "translateX(0px)";
-    }
-
-
-</script>
+<script src="index.js"></script>
+<script src="account.js"></script>
 
 </body>
 
