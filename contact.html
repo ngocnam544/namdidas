@@ -9,7 +9,6 @@
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
         rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -41,17 +40,24 @@
             <div class="info-box">
                 <br>
                 <p><b>&ensp;&ensp; &#9679; Trương Văn Sữu. &emsp;&ensp;&ensp;MSSV: 15520743</b></p>
-                <p><b>&ensp;&ensp; &#9679; Nguyễn Ngọc Nam.&emsp;  MSSV: 18520315</b></p>
+                <p><b>&ensp;&ensp; &#9679; Nguyễn Ngọc Nam.&emsp; MSSV: 18520315</b></p>
                 <p><b>&ensp;&ensp; &#9679; Trương Thế Lân. &emsp;&emsp;&ensp;MSSV: 18520297</b></p>
                 <br>
             </div>
-    
+
             <p>&ensp;&ensp;Cảm ơn các bạn đã ghé thăm cửa hàng của chúng tôi, mọi khó khăn xin liên hệ: &ensp; <b>
                     <RedStore@gmail class="com">nonreply@gmail.com</RedStore@gmail>
                 </b></p>
+            <br>
+            <h3>Địa chỉ cửa hàng:</h3>
+            <p>&ensp;&ensp;43 Ng.Chí Thanh, Hưng Định, Thuận An, Bình Dương
+            </p>
+            <br>
+            <div id="map" style="width:800px;height:450px"></div>
         </div>
-        </div>
-        
+    </div>
+
+
 
     <!---------footer----------->
 
@@ -94,8 +100,20 @@
             <p class="copyright">Copyright 2020</p>
         </div>
     </div>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions)
+        };
+    </script>
 
 
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
     <script src="index.js"></script>
 
 </body>

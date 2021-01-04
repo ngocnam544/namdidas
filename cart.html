@@ -9,8 +9,6 @@
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
         rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link
@@ -53,14 +51,18 @@
                             </a>
                             <small>Giá: $50.00</small>
                             <br>
-                            <a href="" onclick="rmFunction()">Xóa khỏi giỏ</a>
+                            <div onclick="rmFunction1()" class="rmbtn">Xóa khỏi giỏ</div>
                         </div>
                     </div>
                 </td>
-                <td><input type="number" onchange="changeFunction1()" min="0" class="item1-quantity" value="1"></td>
+                <td>                   
+                    <img src="images\minus.png" style="width: 30px; height:30px; cursor: pointer;" onclick="minusFunction1()">
+                    <input type="" onchange="changeFunction1()" min="0" class="item1-quantity" value="1">
+                    <img src="images\add.png" style="width: 30px; height:30px; cursor: pointer;" onclick="plusFunction1()">                  
+                </td>
                 <td class="price1">$50.00</td>
             </tr>
-            <tr>
+            <tr id="row2">
                 <td>
                     <div class="cart-info">
                         <img src="images/buy-2.jpg">
@@ -68,14 +70,18 @@
                             <p>Giày chạy bộ Đen</p>
                             <small>Giá: $75.00</small>
                             <br>
-                            <a href="" class="rmbtn">Xóa khỏi giỏ</a>
+                            <div class="rmbtn" onclick="rmFunction2()" >Xóa khỏi giỏ</div>
                         </div>
                     </div>
                 </td>
-                <td><input type="number" onchange="changeFunction2()" min="0" class="item2-quantity" value="1"></td>
+                <td>
+                    <img src="images\minus.png" style="width: 30px; height:30px;cursor: pointer;" onclick="minusFunction2()">
+                    <input type=""  min="0" class="item2-quantity" value="1">
+                    <img src="images\add.png" style="width: 30px; height:30px;cursor: pointer;" onclick="plusFunction2()">                  
+                </td>
                 <td class="price2">$75.00</td>
             </tr>
-            <tr>
+            <tr id="row3">
                 <td>
                     <div class="cart-info">
                         
@@ -84,11 +90,15 @@
                             <p>Quần dài Xám</p>
                             <small>Giá: $75.00</small>
                             <br>
-                            <a href="" class="rmbtn">Xóa khỏi giỏ</a>
+                            <div class="rmbtn" onclick="rmFunction3()">Xóa khỏi giỏ</div>
                         </div>
                     </div>
                 </td>
-                <td><input type="number" onchange="changeFunction3()" min="0" class="item3-quantity" value="1"></td>
+                <td>
+                    <img src="images\minus.png" style="width: 30px; height:30px;cursor: pointer;" onclick="minusFunction3()">
+                    <input type="" min="0" class="item3-quantity" value="1">
+                    <img src="images\add.png" style="width: 30px; height:30px;cursor: pointer;" onclick="plusFunction3()">                 
+                </td>
                 <td class="price3">$75.00</td>
             </tr>
         </table>
@@ -109,7 +119,7 @@
                 <tr>
                     <td></td>
                     <td>
-                        <div class="button" onclick="buyFunction()">Mua ngay</div>
+                        <div class="button" class="button" onclick="buyFunction()">Mua ngay</div>
                     </td>
                 </tr>
             </table>
